@@ -28,4 +28,4 @@ if __name__ == '__main__':
 
     # printing out each image name, associated with the date it was taken from the exif data
     for i in range(len(img_list)):
-        print(img_list[i], exif_list[i][306])
+        print(img_list[i] + "\t" + exif_list[i][306])
