@@ -7,7 +7,7 @@ def create_gif():
     root.withdraw()
     path = fd.askdirectory()
 
-    with io.get_writer(path + "/" + 'PyLapse.gif', mode='I', duration=0.15) as writer:
+    with io.get_writer(path + "/" + 'PiLapse.gif', mode='I', duration=0.15) as writer:
         for filename in os.listdir(path):
             image = io.imread(path + "/" + filename)
             writer.append_data(image)
